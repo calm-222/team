@@ -55,3 +55,9 @@ h2 {
   background-color: #000;
 }
 
+.qr-image {
+  width: 50%; /* حجم مصغر للـ QR */
+  display: block;
+  margin: 0 auto;
+}
+

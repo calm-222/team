@@ -11,7 +11,7 @@
         <header>
             <h1>واجهة البرنامج</h1>
         </header>
-        
+
         <div class="dashboard">
             <div class="widget visitors">
                 <h2>عدد الزوار اليوم</h2>
@@ -19,27 +19,29 @@
                     <!-- سيتم إضافة الزوار هنا -->
                 </div>
             </div>
-            
+
             <div class="widget registrations">
                 <h2>التسجيلات اليومية</h2>
                 <div id="registration-list">
                     <!-- سيتم إضافة التسجيلات هنا -->
                 </div>
             </div>
-            
+
             <div class="widget qr-code">
                 <h2>QR Code</h2>
                 <div id="qr-code-display">
-                    <!-- سيتم عرض QR Code هنا -->
-                    <button id="generate-qr-btn">إنشاء QR Code</button>
+                    <!-- صورة QR ثابتة -->
+                    <img src="frame.png" alt="QR Code" class="qr-image">
+                    <br><br>
+                    <button id="open-camera-btn">افتح الكاميرا</button>
+                    <input type="file" accept="video/*" capture="environment" id="camera-input" style="display: none;">
                 </div>
             </div>
-            
+
             <div class="widget live-stream">
                 <h2>البث المباشر</h2>
                 <div id="stream-display">
-                    <!-- هنا سيتم عرض البث المباشر -->
-                    <video id="live-video" controls autoplay></video>
+                    <video id="live-video" controls autoplay muted></video>
                 </div>
             </div>
         </div>

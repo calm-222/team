@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة البرنامج</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>واجهة البرنامج</h1>
+        </header>
+        
+        <div class="dashboard">
+            <div class="widget visitors">
+                <h2>عدد الزوار اليوم</h2>
+                <div id="visitor-list">
+                    <!-- سيتم إضافة الزوار هنا -->
+                </div>
+            </div>
+            
+            <div class="widget registrations">
+                <h2>التسجيلات اليومية</h2>
+                <div id="registration-list">
+                    <!-- سيتم إضافة التسجيلات هنا -->
+                </div>
+            </div>
+            
+            <div class="widget qr-code">
+                <h2>QR Code</h2>
+                <div id="qr-code-display">
+                    <!-- سيتم عرض QR Code هنا -->
+                    <button id="generate-qr-btn">إنشاء QR Code</button>
+                </div>
+            </div>
+            
+            <div class="widget live-stream">
+                <h2>البث المباشر</h2>
+                <div id="stream-display">
+                    <!-- هنا سيتم عرض البث المباشر -->
+                    <video id="live-video" controls autoplay></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

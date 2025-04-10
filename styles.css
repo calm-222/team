@@ -51,13 +51,9 @@ h2 {
 
 #live-video {
   width: 100%;
+  height: auto;
   border-radius: 5px;
   background-color: #000;
 }
 
-.qr-image {
-  width: 50%; /* حجم مصغر للـ QR */
-  display: block;
-  margin: 0 auto;
-}
-
+ 

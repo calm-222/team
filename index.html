@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>واجهة البرنامج</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>واجهة التطبيق</title>
+  <!-- ربط ملف CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>واجهة البرنامج</h1>
-    </header>
 
-    <div class="dashboard">
-      <div class="widget visitors">
-        <h2>عدد الزوار اليوم</h2>
-        <div id="visitor-list">
-          <!-- سيتم إضافة الزوار هنا -->
-        </div>
-      </div>
+  <!-- واجهة تسجيل الدخول -->
+  <div id="login-section" class="login-section">
+    <h2>تسجيل الدخول</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="اسم المستخدم" required>
+      <input type="password" id="password" placeholder="كلمة المرور" required>
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+  </div>
 
-      <div class="widget registrations">
-        <h2>التسجيلات اليومية</h2>
-        <div id="registration-list">
-          <!-- سيتم إضافة التسجيلات هنا -->
-        </div>
-      </div>
-
-      <div class="widget qr-code">
-        <h2>QR Code</h2>
-        <div id="qr-code-display" style="text-align: center;">
-          <!-- عرض صورة QR -->
-          <img src="frame.png" alt="QR Code" style="width: 150px;" />
-        </div>
-      </div>
-
-      <div class="widget live-stream">
-        <h2>البث المباشر</h2>
-        <div id="stream-display">
-          <video id="live-video" autoplay playsinline muted></video>
-        </div>
-      </div>
+  <!-- واجهة البرنامج الرئيسية بعد تسجيل الدخول -->
+  <div id="main-section" class="main-section" style="display: none;">
+    <h1>مرحبًا في واجهة البرنامج</h1>
+    <div class="buttons-container">
+      <button id="visitor-btn">الزوار</button>
+      <button id="registration-btn">التسجيلات</button>
+      <button id="qr-btn">كود QR</button>
+      <button id="live-btn">البث المباشر</button>
     </div>
   </div>
 
+  <!-- قسم الزوار -->
+  <div id="visitor-section" class="section-content">
+    <h3>عدد الزوار لليوم</h3>
+    <ul id="visitor-list">
+      <!-- بيانات الزوار ستظهر هنا -->
+    </ul>
+  </div>
+
+  <!-- قسم التسجيلات -->
+  <div id="registration-section" class="section-content">
+    <h3>التسجيلات</h3>
+    <ul id="registration-list">
+      <!-- بيانات التسجيلات ستظهر هنا -->
+    </ul>
+  </div>
+
+  <!-- قسم QR Code -->
+  <div id="qr-section" class="section-content">
+    <h3>كود QR</h3>
+    <div id="qr-code">
+      <!-- سيتم توليد الكود هنا -->
+    </div>
+  </div>
+
+  <!-- قسم البث المباشر -->
+  <div id="live-section" class="section-content">
+    <h3>البث المباشر</h3>
+    <div id="live-stream">
+      <!-- سيتم عرض البث المباشر هنا -->
+    </div>
+    <button id="start-live-btn">بث الآن</button>
+  </div>
+
+  <!-- ربط ملف JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

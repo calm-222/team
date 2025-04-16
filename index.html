@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="ar">
-  <html lang="ar">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>واجهة التطبيق</title>
-      <link rel="stylesheet" href="style.css">
-      <!-- إضافة مكتبة Three.js -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.min.js"></script>
-    </head> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>واجهة التطبيق</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
   <!-- واجهة تسجيل الدخول -->
@@ -22,7 +18,6 @@
     </form>
   </div>
 
-
   <!-- واجهة البرنامج الرئيسية بعد تسجيل الدخول -->
   <div id="main-section" class="main-section" style="display: none;">
     <h1>مرحبًا في واجهة البرنامج</h1>
@@ -34,51 +29,25 @@
       <button id="live-btn">البث المباشر</button>
       <button id="lock-btn">قفل الأقفال</button>
       <button id="unlock-btn">فتح الأقفال</button>
-      <button id="3d-btn">عرض المنزل 3D</button>  <!-- زر عرض المنزل 3D -->
+      <button id="3d-btn">عرض المنزل 3D</button>
     </div>
-  </div>
-
-
-  <!-- قسم الزوار -->
-  <div id="visitor-section" class="section-content" style="display: none;">
-    <h3>عدد الزوار لليوم</h3>
-    <ul id="visitor-list">
-      <!-- بيانات الزوار ستظهر هنا -->
-    </ul>
-  </div>
-
-  <!-- قسم التسجيلات -->
-  <div id="registration-section" class="section-content" style="display: none;">
-    <h3>التسجيلات</h3>
-    <ul id="registration-list">
-      <!-- بيانات التسجيلات ستظهر هنا -->
-    </ul>
-  </div>
-
-  <!-- قسم QR Code -->
-  <div id="qr-section" class="section-content" style="display: none;">
-    <h3>كود QR</h3>
-    <div id="qr-code">
-      <!-- سيتم توليد الكود هنا -->
-    </div>
-  </div>
-
-  <!-- قسم البث المباشر -->
-  <div id="live-section" class="section-content" style="display: none;">
-    <h3>البث المباشر</h3>
-    <div id="live-stream">
-      <!-- سيتم عرض البث المباشر هنا -->
-    </div>
-    <button id="start-live-btn">بث الآن</button>
   </div>
 
   <!-- قسم عرض المنزل 3D -->
   <div id="3d-section" class="section-content" style="display: none;">
     <h3>عرض المنزل 3D</h3>
-    <div id="3d-container" style="width: 100%; height: 500px;"></div>
+    <div id="3d-container"></div>
   </div>
-  
- <!-- ربط ملف JavaScript -->
- <script src="script.js"></script>
+
+  <!-- قسم البث المباشر و QR -->
+  <div id="live-section" class="section-content" style="display: none;">
+    <h3>البث المباشر / QR Code</h3>
+    <div id="live-stream"></div>
+    <button id="start-live-btn" style="display:none">بث الآن</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.min.js"></script>
 </body>
 </html>

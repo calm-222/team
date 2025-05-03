@@ -60,7 +60,7 @@ document.getElementById('qr-btn').addEventListener('click', () => {
   qrContainer.innerHTML = '';
 
   const img = document.createElement('img');
-  img.src = 'https://api.qrserver.com/v1/create-qr-code/?data=https://www.example.com&size=200x200';
+  img.src = 'https://api.qrserver.com/v1/create-qr-code/?data=https://www.example.com&size=200x200https://app.the-qrcode-generator.com/qrcodes/3625976';
   img.alt = 'QR Code';
   img.style.marginTop = '20px';
   qrContainer.appendChild(img);

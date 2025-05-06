@@ -60,7 +60,7 @@ document.getElementById('qr-btn').addEventListener('click', () => {
   qrContainer.innerHTML = '';
 
   const img = document.createElement('img');
-  img.src = 'https://online-qr-generator.com/qr-codes/?data=https://calm-222.github.io/team/';
+  img.src = 'https://online-qr-generator.com/qr-codes=https://calm-222.github.io/team/';
   img.alt = 'QR Code';
   img.style.marginTop = '20px';
   qrContainer.appendChild(img);

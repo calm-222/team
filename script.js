@@ -49,7 +49,7 @@ document.getElementById('registration-btn').addEventListener('click', () => {
   }
 });
 
-// زر كود QR
+// زر QR
 document.getElementById('qr-btn').addEventListener('click', () => {
   hideAllSections();
   const section = document.getElementById('live-section');
@@ -60,7 +60,7 @@ document.getElementById('qr-btn').addEventListener('click', () => {
   qrContainer.innerHTML = '';
 
   const img = document.createElement('img');
-  img.src = 'https://api.qrserver.com/v1/create-qr-code/?data=https://www.example.com&size=200x200https://app.the-qrcode-generator.com/qrcodes/3625976';
+  img.src = 'https://api.qrserver.com/v1/create-qr-code/?data=https://calm-222.github.io/team/';
   img.alt = 'QR Code';
   img.style.marginTop = '20px';
   qrContainer.appendChild(img);
@@ -138,5 +138,8 @@ document.getElementById('3d-btn').addEventListener('click', () => {
     animate();
   }, undefined, function (error) {
     console.error('خطأ في تحميل المجسم:', error);
+    alert('فشل تحميل المجسم 3D');
   });
 });
+
+

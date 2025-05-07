@@ -1,27 +1,30 @@
-body 
-{
+/* إعدادات الـ body لتغطية الخلفية */
+body {
   font-family: 'Arial', sans-serif;
   direction: rtl;
   text-align: center;
-  background-image: url('image.jpg.png'); /* تأكد من أن المسار صحيح */  
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
+  background-image: url('image.jpg.png'); /* تأكد من المسار الصحيح للصورة */
+  background-size: cover; /* لتغطية الشاشة بالكامل */
+  background-position: center; /* لضبط الصورة في المنتصف */
+  background-repeat: no-repeat; /* لمنع تكرار الصورة */
+  color: #fff; /* لتغيير لون النص إلى الأبيض لتكون واضحة فوق الخلفية */
   margin: 0;
   padding: 0;
+  height: 100vh; /* تأكد من أن الخلفية تغطي كامل الشاشة */
 }
 
+/* تصميم القسم الذي يحتوي على محتوى تسجيل الدخول، الرئيسي، والأقسام الأخرى */
 .login-section, .main-section, .section-content {
   margin: 50px auto;
   padding: 20px;
   width: 90%;
   max-width: 500px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8); /* خلفية شفافة قليلاً */
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
 }
 
+/* تنسيق الحقول والأزرار */
 input, button {
   display: block;
   width: 90%;
@@ -30,6 +33,7 @@ input, button {
   font-size: 16px;
 }
 
+/* تنسيق الأزرار */
 button {
   background-color: #007bff;
   color: white;
@@ -42,7 +46,9 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* تخصيص لحجم قسم البث المباشر والمجسم 3D */
 #live-stream, #3d-container {
   margin-top: 20px;
 }
+
 

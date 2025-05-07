@@ -60,8 +60,8 @@ document.getElementById('qr-btn').addEventListener('click', () => {
   qrContainer.innerHTML = '';
 
   const img = document.createElement('img');
-  Image.style.width = "80%";           // يشغل 80% من عرض الشاشة
-  Image.style.maxWidth = "300px";      // لا يتجاوز 300 بكسل على الشاشات الكبيرة
+  Image.style.width = "10%";           // يشغل 80% من عرض الشاشة
+  Image.style.maxWidth = "20px";      // لا يتجاوز 300 بكسل على الشاشات الكبيرة
   Image.style.height = "auto";         // يحافظ على التناسب
   Image.style.display = "block";       // لجعله عنصر سطري منفصل
   Image.style.margin = "20px auto";    // وسطي مع مسافة

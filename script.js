@@ -60,7 +60,7 @@ document.getElementById('qr-btn').addEventListener('click', () => {
   qrContainer.innerHTML = '';
 
   const img = document.createElement('img');
-  img.src = 'https://online-qr-generator.com/qr-codes=https://calm-222.github.io/team/';
+  img.src = 'frame.png';
   img.alt = 'QR Code';
   img.style.marginTop = '20px';
   qrContainer.appendChild(img);
@@ -141,5 +141,4 @@ document.getElementById('3d-btn').addEventListener('click', () => {
     alert('فشل تحميل المجسم 3D');
   });
 });
-
 
